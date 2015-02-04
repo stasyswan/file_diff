@@ -4,34 +4,39 @@ The result of program is show the difference between the files. The format of re
 
 For example:
 File1
-Some
-Simple
-Text 
-File
 
- File2
-Another
-Text
-File
-With
-Additional
-Lines
+ Some
+ Simple
+ Text 
+ File
+
+File2
+
+ Another
+ Text
+ File
+ With
+ Additional
+ Lines
 
 The result of program should look like this:
-1       * Some|Another
-2 - Simple
-3   Text
-4   File
-5 + With
-6 + Additional
-7 + Lines
+
+ 1 * Some|Another
+ 2 - Simple
+ 3   Text
+ 4   File
+ 5 + With
+ 6 + Additional
+ 7 + Lines
 
 The first column shows line number regarding the first file.
+
 The second column shows:
 1. * in case if line has changed
 2. – in case line exists in the first file but does not exist in the second one 
 3. + in case line does not exist in the first file but exists in the second one
 4. Nothing if line has not changed.
+
 The third column shows:
 1. If line has changed, it shows text in the following format:
 Line content from the first file | line content from the second file
