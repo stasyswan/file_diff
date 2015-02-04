@@ -3,6 +3,7 @@ Input parameters for the application are paths of two files (it’s a plus if ap
 The result of program is show the difference between the files. The format of result is shown below.
 
 For example:
+
 File1
 
  Some
