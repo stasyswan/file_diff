@@ -9,7 +9,11 @@
     </div>
 <% end %>
 
-<div id="diff_div"><%= @output.html_safe if @output %></div>
+<div id="diff_div">
+	<%= @output.html_safe %>
+</div>
+
+
 
 <style>
 .diff{overflow:auto;}

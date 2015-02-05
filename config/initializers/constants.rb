@@ -1,0 +1,1 @@
+PATH_TO_SYSTEM_FOLDER = "public/system/"

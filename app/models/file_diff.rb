@@ -10,10 +10,10 @@ class FileDiff < ActiveRecord::Base
 
 
   def url_attached_file
-		"/system/:id/:basename.:extension"
+		"/system/:basename.:extension"
 	end
 
 	def path_attached_file
-		":rails_root/public/system/:id/:basename.:extension"
+		":rails_root/public/system/:basename.:extension"
 	end
 end
