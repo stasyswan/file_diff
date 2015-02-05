@@ -29,7 +29,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="headerwrap" id="home" name="home">
+		<div id="headerwrap" name="home">
 			<header class="clearfix">
 			  <p>Choose Files</p>
 		  	<%= yield %>
@@ -38,8 +38,9 @@
 		<div id="greywrap" class="wrapper">
 			<div class="row">
 				<div class="col-lg-12 callout">
-					<%= @output.html_safe %>
-					<%= @output.inspect %>
+					<div class="container">
+						<%= @output.html_safe %>
+					</div>
 				</div>
 			</div>
 			<div class="push"></div>

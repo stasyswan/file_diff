@@ -6,11 +6,11 @@ class ApplicationController < ActionController::Base
 	def format_diff_line line, i
 	  	case line
 		when /^\+/ 
-			@output += "<tr class='ins'><ins><td class='symbol'>" + (i+1).to_s + "</td><td>" + line.chomp + "</td></ins></tr>"
+			@output += "<li class='ins'><div class='pull-left'><del><span class='symbol'>" + (i+1).to_s + "</span>" + line.chomp + "</del></div></li>"
 		when /^-/ 
-			@output += "<tr class='del'><ins><td class='symbol'>" + (i+1).to_s + "</td><td>" + line.chomp + "</td></del></tr>"
+			@output += "<li class='del'><div class='pull-left'><ins><span class='symbol'>" + (i+1).to_s + "</span>" + line.chomp + "</ins></div></li>"
 		else
-			@output += "<tr class='unchanged'><td><span class='symbol'>" + (i+1).to_s + "</td><td>" + line.chomp + "</td></tr>"
+			@output += "<li class='unchanged'><div class='pull-left'><span><span class='symbol'>" + (i+1).to_s + "</span>" + line.chomp + "</span></div></li>"
 		end
 	end
 end

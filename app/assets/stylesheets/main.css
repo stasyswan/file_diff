@@ -16,6 +16,7 @@
 html,
 button,
 li.unchanged,
+table,
 select,
 textarea {
     color: #181818;
