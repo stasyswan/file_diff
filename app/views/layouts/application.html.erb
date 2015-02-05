@@ -5,7 +5,7 @@
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
-	  <link rel="shortcut icon" href="assets/ico/favicon.png">
+	  <link rel="shortcut icon" href="/app/assets/ico/favicon.png">
 	  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 	  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
@@ -38,11 +38,8 @@
 		<div id="greywrap" class="wrapper">
 			<div class="row">
 				<div class="col-lg-12 callout">
-					<% if @output != "" %>
-						<%= @output.html_safe %>
-					<% else %>
-						Here will be output
-					<% end %>
+					<%= @output.html_safe %>
+					<%= @output.inspect %>
 				</div>
 			</div>
 			<div class="push"></div>

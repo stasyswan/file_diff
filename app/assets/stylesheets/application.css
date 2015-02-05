@@ -28,3 +28,7 @@
 .footer, .push {
 	height: 8em;
 }
+.error{
+	background-color: #f2dede;
+	border-color: #eed3d7;
+}
