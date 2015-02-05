@@ -9,5 +9,22 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require bootstrap_and_overrides
  *= require_tree .
  */
+
+.center_div{
+	width: 25%; 
+	margin: 0 auto; 
+	text-align: center;
+}
+
+.wrapper {
+	min-height: 69%;
+	height: auto !important;
+	height: 69%;
+	margin: 0 auto -7.47em;
+}
+.footer, .push {
+	height: 8em;
+}

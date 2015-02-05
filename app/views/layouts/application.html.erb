@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SimpleFilesDiff</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>SimpleFilesDiff</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	  <link rel="shortcut icon" href="assets/ico/favicon.png">
+	  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-<%= yield %>
+	  <title>Files Diff Application</title>
 
-</body>
+	</head>
+	<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+	 	<div id="navbar-main">
+	    <div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+	          </button>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><%= link_to "Home", root_path %></li>
+						</ul>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div id="headerwrap" id="home" name="home">
+			<header class="clearfix">
+			  <p>Choose Files</p>
+		  	<%= yield %>
+			</header>	    
+		</div>
+		<div id="greywrap" class="wrapper">
+			<div class="row">
+				<div class="col-lg-12 callout">
+					<% if @output != "" %>
+						<%= @output.html_safe %>
+					<% else %>
+						Here will be output
+					<% end %>
+				</div>
+			</div>
+			<div class="push"></div>
+		</div>
+		<div id="footerwrap" class="footer">
+			<div class="container">
+				<h4> Created by <%= link_to "Stasy Swan", "https://www.linkedin.com/pub/anastasiya-lebedeva/5b/528/213" %> in 2015</h4>
+			</div>
+		</div>
+	</body>
 </html>
