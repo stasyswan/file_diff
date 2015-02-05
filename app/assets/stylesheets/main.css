@@ -15,7 +15,7 @@
 
 html,
 button,
-span,
+li.unchanged,
 select,
 textarea {
     color: #181818;
