@@ -1,5 +1,5 @@
 .diff{overflow:auto;}
-.diff ul{background:#fff;overflow:auto;font-size:13px;list-style:none;margin:0;padding:0;display:table;width:100%;}
+.diff ul{background:#fff;overflow:auto;font-size:16px;list-style:none;margin:0;padding:0;display:table;width:100%;}
 .diff del, .diff ins{display:block;text-decoration:none;}
 .diff li{padding:0; display:table-row;margin: 0;height:1em;}
 .diff li.ins{background:#dfd; color:#080}

@@ -413,32 +413,6 @@ a:after {
 	font-size: 25px;
 }
 
-
-/* Section Dividers Backgrounds */
-
-.divider1 {
-	background-image: url('divider1.jpg')
-}
-
-.divider2 {
-	background-image: url('divider2.jpg')
-}
-
-.divider3 {
-	background-image: url('divider3.jpg');
-	margin-top: 0px;
-}
-
-.divider4 {
-	background-image: url('divider4.jpg')
-}
-
-.divider6 {
-	background-image: url('divider6.jpg')
-}
-
-
-
 /* ==========================================================================
    Services Section
    ========================================================================== */
